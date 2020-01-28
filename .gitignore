@@ -23,6 +23,6 @@
 hs_err_pid*
 
 # Eclipse files
-**/.project
-**/.classpath
-**/.settings/**/*
+*/**/.project
+*/**/.classpath
+*/**/.settings/**
