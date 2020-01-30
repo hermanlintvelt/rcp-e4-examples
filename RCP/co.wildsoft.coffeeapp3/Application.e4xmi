@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.window.main" label="Wildsoft App" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_3AzawDnnEeqeucUf7VfyMA" elementId="co.wildsoft.rcpapp.perspectivestack.0" selectedElement="_4txS4DnnEeqeucUf7VfyMA">
+      <children xsi:type="advanced:Perspective" xmi:id="_4txS4DnnEeqeucUf7VfyMA" elementId="co.wildsoft.rcpapp.perspective.myperspective" label="My Perspective" iconURI="platform:/plugin/co.wildsoft.rcpapp/icons/home.png" tooltip="My custom Perspective">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.partsashcontainer.sample" selectedElement="_6wlLk8gZEeSyMNYR5xypkQ">
+          <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.partstack.sample">
+            <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.part.sample" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.parts.SamplePart" label="Sample Part" iconURI="platform:/plugin/co.wildsoft.rcpapp/icons/home.png">
+              <menus xmi:id="_ErIvMEJsEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.menu.viewmenu" label="View Menu">
+                <tags>ViewMenu</tags>
+                <children xsi:type="menu:DynamicMenuContribution" xmi:id="_Gj7c0EJsEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.dynamicmenucontribution.0" label="My Direct Item" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.MyDirectItemHandler"/>
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_DXgQMEKEEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handledmenuitem.refreshsuppliers" label="Refresh Suppliers" command="_6QTbIEKDEeq69uCYflKtUQ"/>
+              </menus>
+              <menus xsi:type="menu:PopupMenu" xmi:id="_PkpGAEKFEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.popupmenu.0">
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_Q4IuMEKFEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handledmenuitem.refreshsuppliers" label="Refresh Suppliers" command="_6QTbIEKDEeq69uCYflKtUQ"/>
+              </menus>
+              <toolbar xmi:id="_ISNIQEKHEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.toolbar.1">
+                <children xsi:type="menu:HandledToolItem" xmi:id="_JPEZIEKHEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handledtoolitem.refresh" label="Refresh" command="_6QTbIEKDEeq69uCYflKtUQ"/>
+              </toolbar>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_2GMbEEKXEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_2uWnQEKXEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.part.details" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.parts.DetailsPart" label="Details"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_6wlLisgZEeSyMNYR5xypkQ" elementId="file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLi8gZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handleditem.file.open" label="Open" iconURI="platform:/plugin/co.wildsoft.rcpapp/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjMgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handleditem.save" label="Save" iconURI="platform:/plugin/co.wildsoft.rcpapp/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjcgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handleditem.quit" label="Quit" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_yJDvkEJ1Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.menu.coffee" label="Coffee">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_0oWcgEJ1Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handledmenuitem.order" label="Order" mnemonics="" command="_o3HDEEJ1Eeq69uCYflKtUQ"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iyaV4EKaEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.menuseparator.0"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_kwOGYEKaEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.directmenuitem.showdetails" label="Show Details" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.ShowDetailsHandler"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_6wlLlcgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.trimbar.top">
+      <children xsi:type="menu:ToolBar" xmi:id="_6wlLlsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLmMgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handleditem.trimbar.top.save" iconURI="platform:/plugin/co.wildsoft.rcpapp/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handleditem.trimbar.top.open" iconURI="platform:/plugin/co.wildsoft.rcpapp/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_UJVPoEJ5Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handledtoolitem.order" label="Order" command="_o3HDEEJ1Eeq69uCYflKtUQ"/>
+        <children xsi:type="menu:ToolControl" xmi:id="_kxH9wEJ4Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.toolcontrol.search" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.SearchControlHandler"/>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_9lGlUDnTEeqHSeyXVVE1og" elementId="co.wildsoft.rcpapp.trimbar.bottom" side="Bottom">
+      <children xsi:type="menu:ToolBar" xmi:id="__wYxIDnTEeqHSeyXVVE1og" elementId="co.wildsoft.rcpapp.toolbar.0"/>
+    </trimBars>
+    <trimBars xmi:id="_FoPGEEJrEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.trimbar.0" side="Left"/>
+  </children>
+  <handlers xmi:id="_6wlLfcgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handler.quitCommand" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.QuitHandler" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handler.openCommand" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handler.saveCommand" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.handler.aboutCommand" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_uITP4EJ1Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handler.0" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.OrderCoffeeHandler" command="_o3HDEEJ1Eeq69uCYflKtUQ"/>
+  <handlers xmi:id="_Nq8CEEM4Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handler.suppliers.refresh" contributionURI="bundleclass://co.wildsoft.rcpapp/co.wildsoft.rcpapp.handlers.RefreshSuppliersHandler" command="_6QTbIEKDEeq69uCYflKtUQ"/>
+  <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
+    <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_6wlLhcgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.keybinding.m1s" keySequence="M1+S" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_6wlLiMgZEeSyMNYR5xypkQ" elementId="co.wildsoft.rcpapp.keybinding.m1a" keySequence="M1+A" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_gCBU4EJ5Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.keybinding.0" keySequence="M1+R" command="_o3HDEEJ1Eeq69uCYflKtUQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_6wlLecgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_6wlLe8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <toolBarContributions xmi:id="_zEhVcEJ5Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.toolbarcontribution.0" parentId="org.eclipse.ui.main.toolbar">
+    <children xsi:type="menu:HandledToolItem" xmi:id="_0YxyoEJ5Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handledtoolitem.order2" label="Order2" command="_o3HDEEJ1Eeq69uCYflKtUQ"/>
+    <children xsi:type="menu:HandledToolItem" xmi:id="_QymWkEM4Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.handledtoolitem.refresh" label="Refresh" command="_6QTbIEKDEeq69uCYflKtUQ"/>
+  </toolBarContributions>
+  <commands xmi:id="_6wlLfMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
+  <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_o3HDEEJ1Eeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.command.order" commandName="orderCoffeeCommand"/>
+  <commands xmi:id="_6QTbIEKDEeq69uCYflKtUQ" elementId="co.wildsoft.rcpapp.command.refreshsupplierscommand" commandName="refreshSuppliersCommand"/>
+  <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_6wlLdcgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_6wlLdsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_6wlLd8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_6wlLeMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
